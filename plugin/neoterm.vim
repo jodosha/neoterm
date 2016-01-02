@@ -81,6 +81,10 @@ if !exists("g:neoterm_test_status")
         \ }
 end
 
+if !exists("g:neoterm_cmd_prefix")
+  let g:neoterm_cmd_prefix = ""
+endif
+
 hi! NeotermTestRunning ctermfg=11 ctermbg=0
 hi! NeotermTestSuccess ctermfg=2 ctermbg=0
 hi! NeotermTestFailed ctermfg=1 ctermbg=0

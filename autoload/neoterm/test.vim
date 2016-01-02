@@ -22,7 +22,7 @@ endfunction
 
 " Public: Runs the current test lib with the given scope.
 function! neoterm#test#run(scope)
-  let g:neoterm.test.last_command = <sid>get_test_command(a:scope)
+  let g:neoterm.test.last_command = g:neoterm_cmd_prefix . <sid>get_test_command(a:scope)
   call <sid>run(g:neoterm.test.last_command)
 endfunction
 
